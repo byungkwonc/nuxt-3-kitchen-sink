@@ -4,11 +4,7 @@
       Check out this demo! Notice you see a loading state while the data is
       being fetched.
     </div>
-    <button
-      v-if="!show"
-      @click="show = true"
-      class="p-3 text-sm font-medium text-dark uppercase bg-primary rounded"
-    >
+    <button v-if="!show" @click="show = true" class="p-3 text-sm font-medium text-dark uppercase bg-primary rounded">
       Show Result
     </button>
     <UseLazyFetchDemo v-if="show" />

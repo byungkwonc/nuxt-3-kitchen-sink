@@ -24,7 +24,7 @@ const { data: posts } = await useFetch('https://api.nuxtjs.dev/posts');
       {{ post.description }}
     </div>
     <div>
-      <img :src='`${post.image}`'/>
+      <a :href="post.image" target="_blank"><img :src="post.image"/></a>
     </div>
 </div>
 </template>
@@ -51,6 +51,9 @@ This behaves identically to useFetch with the `lazy: true` option set, so the as
     </div>
     <div>
       {{ post.description }}
+    </div>
+    <div>
+      <a :href="post.image" target="_blank"><img :src="post.image"/></a>
     </div>
   </div>
 </template>

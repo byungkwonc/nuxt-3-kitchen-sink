@@ -9,6 +9,9 @@
         <div class="text-sm">
           {{ post.description }}
         </div>
+        <div>
+          <a :href="post.image" target="_blank"><img :src="post.image"/></a>
+        </div>
       </div>
     </div>
   </div>
