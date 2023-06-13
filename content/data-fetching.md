@@ -23,7 +23,10 @@ const { data: posts } = await useFetch('https://api.nuxtjs.dev/posts');
     <div>
       {{ post.description }}
     </div>
-  </div>
+    <div>
+      <img :src='`${post.image}`'/>
+    </div>
+</div>
 </template>
 ```
 
