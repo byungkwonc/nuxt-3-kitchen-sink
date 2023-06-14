@@ -11,10 +11,12 @@
     </div>
     <div class="w-full max-w-5xl max-h-screen px-12 overflow-y-auto pb-9">
       <slot />
+      <agentify-widget bot_uid=hcg9sfxkz91DwpP5mUmLTQ></agentify-widget>
     </div>
   </div>
 </template>
 
+<script type="module" src=https://www.agentify.ai/agentify-widget.js></script>
 <script>
 export default {
   data() {
