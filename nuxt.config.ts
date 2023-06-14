@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'https://www.agentify.ai/agentify-widget.js'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['UseFetchDemo'].includes(tag),
@@ -16,5 +16,13 @@ export default defineNuxtConfig({
       preload: ['javascript', 'vue', 'html'],
       theme: 'monokai',
     },
+  },
+  app: {
+    head: {
+      script: [
+        // <script src="https://myawesome-lib.js"></script>
+        { src: 'https://www.agentify.ai/agentify-widget.js' }
+      ],
+    }
   },
 });
