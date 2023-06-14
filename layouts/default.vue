@@ -16,7 +16,6 @@
   </div>
 </template>
 
-<script type="module" src=https://www.agentify.ai/agentify-widget.js></script>
 <script>
 export default {
   data() {
