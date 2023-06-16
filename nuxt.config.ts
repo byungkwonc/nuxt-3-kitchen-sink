@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', ['@nuxtjs/google-analytics', { ua: 'G-K64QJ0E61J' }]],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  plugins: ['@/plugins/gtag'],
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['UseFetchDemo'].includes(tag),
@@ -23,13 +24,6 @@ export default defineNuxtConfig({
         // <script src="https://myawesome-lib.js"></script>
         { src: 'https://www.agentify.ai/agentify-widget.js' }
       ],
-    }
-  },
-  runtimeConfig: {
-    public: {
-      googleAnalytics: {
-        id: process.env.GOOGLE_ANALYTICS_ID
-      }
     }
   },
 });
