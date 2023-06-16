@@ -1,7 +1,9 @@
+import {isProduction} from "std-env";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
-  plugins: ['@/plugins/gtag'],
+  plugins: ['@/plugins/gtag.client'],
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['UseFetchDemo'].includes(tag),
@@ -24,6 +26,12 @@ export default defineNuxtConfig({
         // <script src="https://myawesome-lib.js"></script>
         { src: 'https://www.agentify.ai/agentify-widget.js' }
       ],
+    }
+  },
+  runtimeConfig: {
+    public: {
+        google_analytics_id: process.env.google_analytics_id,
+        production_mode: isProduction
     }
   },
 });

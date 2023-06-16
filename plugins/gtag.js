@@ -3,8 +3,6 @@ import VueGtag from 'vue-gtag';
 
 export const GA_TRACKING_ID = "G-K64QJ0E61J";
 
-export default {
-  Vue.use(VueGtag, {
+Vue.use(VueGtag, {
     config: { id: GA_TRACKING_ID }
-  });
-};
+  })
