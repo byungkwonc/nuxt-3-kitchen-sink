@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', ['@nuxtjs/google-analytics', { ua: 'G-K64QJ0E61J' }]],
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['UseFetchDemo'].includes(tag),
