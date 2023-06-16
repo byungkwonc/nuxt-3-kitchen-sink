@@ -2,7 +2,7 @@ import {isProduction} from "std-env";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/dotenv'],
   plugins: ['@/plugins/gtag.client'],
   vue: {
     compilerOptions: {
