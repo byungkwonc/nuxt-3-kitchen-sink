@@ -14,7 +14,6 @@
     "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
-    "dotenv": "^16.2.0",
     "vue-gtag": "^2.0.1",
     "vue-gtag-next": "^1.14.0"
   }
