@@ -1,6 +1,10 @@
-import Vue from 'vue'
-import VueGtag from 'vue-gtag'
+import Vue from 'vue';
+import VueGtag from 'vue-gtag';
 
-Vue.use(VueGtag, {
-  config: { id: 'G-G-K64QJ0E61J' }
-})
+export const GA_TRACKING_ID = "G-K64QJ0E61J";
+
+export default gtag = () => {
+  Vue.use(VueGtag, {
+    config: { id: GA_TRACKING_ID }
+  });
+};
