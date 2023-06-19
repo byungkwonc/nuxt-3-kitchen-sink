@@ -1,9 +1,9 @@
-import {isProduction} from "std-env";
+// import {isProduction} from "std-env";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/dotenv'],
-  plugins: ['@/plugins/gtag.client'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  // plugins: ['@/plugins/gtag.client'],
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => ['UseFetchDemo'].includes(tag),
@@ -28,10 +28,10 @@ export default defineNuxtConfig({
       ],
     }
   },
-  runtimeConfig: {
-    public: {
-        google_analytics_id: process.env.google_analytics_id,
-        production_mode: isProduction
-    }
-  },
+  // runtimeConfig: {
+  //   public: {
+  //       google_analytics_id: process.env.google_analytics_id,
+  //       production_mode: isProduction
+  //   }
+  // },
 });
