@@ -11,10 +11,10 @@
     "@nuxt/content": "2.3.0",
     "@nuxtjs/tailwindcss": "6.2.0",
     "nuxt": "3.0.0",
-    "vue-gtag-next": "^1.14.0"
+    "vue-gtag-next": "1.14.0"
   },
   "dependencies": {
-    "vue-gtag": "^2.0.1",
-    "vue-gtag-next": "^1.14.0"
+    "vue-gtag": "2.0.1",
+    "vue-gtag-next": "1.14.0"
   }
 }
